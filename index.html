@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>St. George Salem Orthodox Church | Iyppalloor, Kerala | Malankara Orthodox Syrian Church</title>
+  <meta name="description" content="Official website of St. George Salem Orthodox Church, Iyppalloor, Kerala, India. An ancient apostolic parish of the Malankara Orthodox Syrian Church (Indian Orthodox Church).">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/sleeba-cross.svg">
+
+  <!-- Google Fonts: Cinzel (Monumental Headings), Plus Jakarta Sans (Readable UI), Lora (Scripture & Reflections) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="midnight">
+
+  <!-- Accessibility / Quick Navigation Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main liturgical content</a>
+
+  <!-- Ambient Golden Particle Canvas (Subtle Sacred Starlight) -->
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Top Liturgical Ribbon / Parish Notice -->
+  <div class="top-announcement-bar" role="region" aria-label="Liturgical Announcement">
+    <div class="container bar-content">
+      <div class="bar-left">
+        <span class="cross-mini" aria-hidden="true">✟</span>
+        <span class="bar-text"><strong>Malankara Orthodox Syrian Church</strong> • Diocese of <span class="placeholder-text" title="Diocese placeholder">[Diocese Name Placeholder]</span></span>
+      </div>
+      <div class="bar-right">
+        <span class="feast-tag">Patronal Feast</span>
+        <span class="bar-event">Feast of St. Geevarghese Sahada (May 6 / <span class="placeholder-text">[Parish Date Placeholder]</span>)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Header & Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      
+      <!-- Brand & Seal -->
+      <a href="#home" class="brand-link" aria-label="St. George Salem Orthodox Church Home">
+        <img src="assets/images/church-crest.svg" alt="Church Emblem" class="church-logo" width="56" height="56">
+        <div class="brand-titles">
+          <span class="brand-main">ST. GEORGE SALEM</span>
+          <span class="brand-sub">ORTHODOX CHURCH • IYPPALLOOR</span>
+          <span class="brand-affiliation">Malankara Orthodox Syrian Church, Kerala</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">Our Church</a></li>
+          <li><a href="#services" class="nav-link">Holy Qurbana</a></li>
+          <li><a href="#parish-life" class="nav-link">Parish Life</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#feasts" class="nav-link">Feasts & Events</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <!-- Ambient Audio Chime Toggle -->
+        <button id="chime-toggle" class="btn-icon" aria-label="Play peaceful church bell chime" title="Chime of Peace">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+          </svg>
+          <span class="icon-tooltip">Bell Chime</span>
+        </button>
+
+        <!-- Theme Mode Toggle (Midnight Navy / Ivory Warmth) -->
+        <button id="theme-toggle" class="btn-icon" aria-label="Switch between Midnight Navy and Ivory theme" title="Toggle Theme">
+          <span class="theme-icon" aria-hidden="true">✦</span>
+          <span class="icon-tooltip">Theme</span>
+        </button>
+
+        <!-- Primary Action Button -->
+        <a href="#services" class="btn btn-gold btn-sm nav-cta">Service Timings</a>
+
+        <!-- Mobile Menu Toggle Button (Hamburger) -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu (Slide-out) -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <img src="assets/images/church-crest.svg" alt="Church Logo" width="44" height="44">
+        <div>
+          <div class="drawer-church-title">St. George Salem</div>
+          <div class="drawer-church-sub">Iyppalloor, Kerala</div>
+        </div>
+      </div>
+      <button class="drawer-close" id="drawer-close" aria-label="Close navigation menu">✕</button>
+    </div>
+    <nav class="drawer-nav">
+      <ul>
+        <li><a href="#home" class="drawer-link active">Home</a></li>
+        <li><a href="#about" class="drawer-link">Our Church & Faith</a></li>
+        <li><a href="#services" class="drawer-link">Holy Qurbana & Worship</a></li>
+        <li><a href="#parish-life" class="drawer-link">Spiritual Fellowships</a></li>
+        <li><a href="#gallery" class="drawer-link">Sacred Gallery</a></li>
+        <li><a href="#feasts" class="drawer-link">Feasts & Events</a></li>
+        <li><a href="#contact" class="drawer-link">Visit & Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="drawer-footer">
+      <p class="drawer-verse">“How lovely is Your dwelling place, O Lord of hosts!”</p>
+      <a href="#contact" class="btn btn-gold btn-block">Get in Touch</a>
+    </div>
+  </aside>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- MAIN LITURGICAL CONTENT -->
+  <main id="main-content">
+
+    <!-- =========================================================
+         SECTION 1: HERO SECTION (Cinematic, Majestic, Devout)
+         ========================================================= -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-overlay"></div>
+      
+      <div class="container hero-container">
+        
+        <!-- Centerpiece Sacred Cross Emblem -->
+        <div class="hero-sleeba-wrapper fade-in-up">
+          <div class="sleeba-halo"></div>
+          <img src="assets/images/sleeba-cross.svg" alt="Malankara Orthodox Syrian Sleeba" class="hero-sleeba-img" width="110" height="143">
+        </div>
+
+        <!-- Liturgical Greeting in West Syriac & English -->
+        <div class="syriac-blessing fade-in-up delay-1">
+          <span class="syriac-script">ܫܠܡܐ ܥܡܟܘܢ</span>
+          <span class="syriac-translation">Shlomo Amkhun • Peace be with you all</span>
+        </div>
+
+        <!-- Monumental Headings -->
+        <h1 class="hero-title fade-in-up delay-2">
+          ST. GEORGE SALEM <span class="highlight-gold">ORTHODOX CHURCH</span>
+        </h1>
+        <p class="hero-parish-tag fade-in-up delay-2">
+          IYPPALLOOR, KERALA, INDIA
+        </p>
+
+        <p class="hero-subhead fade-in-up delay-3">
+          A sacred sanctuary of ancient apostolic worship, deep prayer, and enduring Christian fellowship under the Holy Episcopal Synod of the Malankara Orthodox Syrian Church.
+        </p>
+
+        <!-- Call to Actions -->
+        <div class="hero-buttons fade-in-up delay-4">
+          <a href="#services" class="btn btn-gold btn-lg">
+            <span class="btn-icon-symbol">♰</span> Holy Qurbana Timings
+          </a>
+          <a href="#about" class="btn btn-outline-gold btn-lg">
+            Explore Our Heritage
+          </a>
+          <a href="#contact" class="btn btn-ghost btn-lg">
+            Plan a Visit
+          </a>
+        </div>
+
+        <!-- Interactive Liturgical Verse Card of the Day -->
+        <div class="daily-verse-banner fade-in-up delay-5" id="verse-card">
+          <div class="verse-header">
+            <span class="verse-icon">📖</span>
+            <span class="verse-label">Scripture of the Day</span>
+            <button id="next-verse-btn" class="btn-text-sm" title="Refresh scripture">Next Verse ↻</button>
+          </div>
+          <blockquote class="verse-body" id="daily-verse-text">
+            “Lord, I love the house where you dwell, the place where your glory resides.”
+          </blockquote>
+          <cite class="verse-citation" id="daily-verse-cite">— Psalm 26:8</cite>
+        </div>
+
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#welcome" class="scroll-down-indicator" aria-label="Scroll down to welcome section">
+        <span class="scroll-arrow">↓</span>
+        <span class="scroll-label">Scroll to Enter</span>
+      </a>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 2: VICAR'S WELCOME & PEACE MESSAGE
+         ========================================================= -->
+    <section class="welcome-section section-padding" id="welcome">
+      <div class="container">
+        
+        <div class="welcome-grid">
+          
+          <!-- Left: Saint Icon / Portrait Medallion -->
+          <div class="welcome-visual reveal-on-scroll">
+            <div class="icon-frame-outer">
+              <div class="icon-frame-glow"></div>
+              <img src="assets/images/st-george-icon.svg" alt="Patron Saint St. George the Martyr" class="patron-saint-img">
+            </div>
+            <div class="patron-caption">
+              <strong>St. Geevarghese Sahada</strong>
+              <span>Our Heavenly Patron &amp; Intercessor</span>
+            </div>
+          </div>
+
+          <!-- Right: Welcome Text & Vicar Message Placeholder -->
+          <div class="welcome-content reveal-on-scroll delay-1">
+            <div class="section-kicker">Welcome to Our Parish</div>
+            <h2 class="section-title">A Living Haven of Faith &amp; Fellowship in Iyppalloor</h2>
+            <div class="gold-flourish-divider">
+              <span class="flourish-line"></span>
+              <span class="flourish-cross">✟</span>
+              <span class="flourish-line"></span>
+            </div>
+
+            <p class="lead-text">
+              We extend our heartfelt blessings and warm Christian welcome to every believer, visitor, and seeker visiting the digital home of St. George Salem Orthodox Church, Iyppalloor.
+            </p>
+
+            <p class="body-text">
+              Rooted in the ancient apostolic faith planted in Kerala by St. Thomas the Apostle in AD 52, our parish gathers every Sunday to offer the sacrifice of praise—the Holy Qurbana—praying for our families, our village of Iyppalloor, and the entire world.
+            </p>
+
+            <!-- Pastoral Message Card with Honest Placeholders -->
+            <div class="pastoral-card">
+              <div class="censer-badge" aria-hidden="true">
+                <img src="assets/images/dhoopakutty-censer.svg" alt="Orthodox Censer" width="40" height="56">
+              </div>
+              <div class="pastoral-message">
+                <div class="placeholder-alert-badge">
+                  <span>ℹ Parish Information Placeholder</span>
+                </div>
+                <blockquote class="pastoral-quote">
+                  “[May the grace of our Lord Jesus Christ, the love of God the Father, and the communion of the Holy Spirit be with us all. Welcome to our parish family where ancient faith nurtures every generation.]”
+                </blockquote>
+                <div class="pastoral-signatures">
+                  <div class="signature-block">
+                    <span class="signature-name placeholder-text">[Rev. Fr. Vicar Name Placeholder]</span>
+                    <span class="signature-title">Vicar, St. George Salem Orthodox Church</span>
+                  </div>
+                  <div class="signature-block">
+                    <span class="signature-name placeholder-text">[Rev. Fr. Asst. Vicar Placeholder, if applicable]</span>
+                    <span class="signature-title">Assistant Vicar</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 3: HOLY QURBANA & SERVICE TIMINGS
+         ========================================================= -->
+    <section class="services-section section-padding bg-navy-alt" id="services">
+      <div class="container">
+        
+        <div class="section-heading text-center reveal-on-scroll">
+          <div class="section-kicker">Worship &amp; Liturgy</div>
+          <h2 class="section-title">Holy Qurbana &amp; Prayer Schedule</h2>
+          <div class="gold-flourish-divider center">
+            <span class="flourish-line"></span>
+            <span class="flourish-cross">✟</span>
+            <span class="flourish-line"></span>
+          </div>
+          <p class="section-subtitle">
+            Experience the reverent West Syriac liturgical tradition, sacred prayers, and incense offering of the Malankara Orthodox Syrian Church.
+          </p>
+        </div>
+
+        <!-- Service Cards Grid -->
+        <div class="services-grid">
+
+          <!-- Card 1: Sunday Holy Qurbana -->
+          <div class="service-card service-card-featured reveal-on-scroll delay-1">
+            <div class="card-pill">Main Liturgy</div>
+            <div class="service-icon-wrap">
+              <span class="service-cross">♰</span>
+            </div>
+            <h3 class="service-title">Sunday Holy Qurbana</h3>
+            <p class="service-native-title">ഞായറാഴ്ച വിശുദ്ധ കുർബാന</p>
+            <div class="service-divider"></div>
+            
+            <ul class="timing-list">
+              <li class="timing-item">
+                <span class="timing-name">Morning Prayer (Prabhaatha Prarthana)</span>
+                <span class="timing-hour"><span class="placeholder-text">[07:00 AM]</span></span>
+              </li>
+              <li class="timing-item highlight-row">
+                <span class="timing-name">Holy Qurbana (Vishudha Qurbana)</span>
+                <span class="timing-hour"><span class="placeholder-text">[08:30 AM]</span></span>
+              </li>
+              <li class="timing-item">
+                <span class="timing-name">Sunday School Classes (OSSAE)</span>
+                <span class="timing-hour"><span class="placeholder-text">[10:45 AM]</span></span>
+              </li>
+            </ul>
+
+            <div class="service-note">
+              <span class="note-icon">✦</span> Please arrive early for the liturgical morning prayers.
+            </div>
+          </div>
+
+          <!-- Card 2: Saturday Evening Prayer -->
+          <div class="service-card reveal-on-scroll delay-2">
+            <div class="card-pill">Preparation</div>
+            <div class="service-icon-wrap">
+              <span class="service-cross">🕯</span>
+            </div>
+            <h3 class="service-title">Saturday Evening Prayer</h3>
+            <p class="service-native-title">ശനിയാഴ്ച സന്ധ്യാ പ്രാർത്ഥന</p>
+            <div class="service-divider"></div>
+
+            <ul class="timing-list">
+              <li class="timing-item">
+                <span class="timing-name">Evening Prayer (Sandhya Prarthana)</span>
+                <span class="timing-hour"><span class="placeholder-text">[06:30 PM]</span></span>
+              </li>
+              <li class="timing-item">
+                <span class="timing-name">Holy Confession (Kumbasaram)</span>
+                <span class="timing-hour"><span class="placeholder-text">[07:15 PM]</span></span>
+              </li>
+            </ul>
+
+            <div class="service-note">
+              <span class="note-icon">✦</span> Preparation for the Sunday Holy Mysteries.
+            </div>
+          </div>
+
+          <!-- Card 3: Feast Days & Intercessory Prayer -->
+          <div class="service-card reveal-on-scroll delay-3">
+            <div class="card-pill">Intercession</div>
+            <div class="service-icon-wrap">
+              <span class="service-cross">🛡</span>
+            </div>
+            <h3 class="service-title">St. George Intercessory Prayer</h3>
+            <p class="service-native-title">വി. ഗീവർഗ്ഗീസ് സഹദായുടെ മധ്യസ്ഥ പ്രാർത്ഥന</p>
+            <div class="service-divider"></div>
+
+            <ul class="timing-list">
+              <li class="timing-item">
+                <span class="timing-name">Intercessory Prayers (Madhyastha Prarthana)</span>
+                <span class="timing-hour"><span class="placeholder-text">[Special Days / Weekly Placeholder]</span></span>
+              </li>
+              <li class="timing-item">
+                <span class="timing-name">Lenten &amp; Vigils (Nombu Namaskaram)</span>
+                <span class="timing-hour"><span class="placeholder-text">[As announced]</span></span>
+              </li>
+            </ul>
+
+            <div class="service-note">
+              <span class="note-icon">✦</span> Seek the powerful intercession of St. George.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Note to User/Parishioner -->
+        <div class="placeholder-banner reveal-on-scroll">
+          <div class="banner-icon">ℹ</div>
+          <div class="banner-content">
+            <strong>Parish Timings Customization Note:</strong>
+            The times above are clearly marked as placeholders. To personalize these for Iyppalloor church, simply open <code>index.html</code> in any text editor and adjust the times to match your parish's exact customary schedule.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 4: ABOUT OUR PARISH & ORTHODOX HERITAGE
+         ========================================================= -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        
+        <div class="section-heading text-center reveal-on-scroll">
+          <div class="section-kicker">Apostolic Heritage</div>
+          <h2 class="section-title">The Malankara Orthodox Syrian Tradition</h2>
+          <div class="gold-flourish-divider center">
+            <span class="flourish-line"></span>
+            <span class="flourish-cross">✟</span>
+            <span class="flourish-line"></span>
+          </div>
+          <p class="section-subtitle">
+            An indigenous, apostolic Church founded by St. Thomas the Apostle in Kerala, united in ancient West Syriac liturgical heritage and devoted fellowship.
+          </p>
+        </div>
+
+        <!-- Pillars of the Orthodox Faith Grid -->
+        <div class="pillars-grid">
+          
+          <div class="pillar-card reveal-on-scroll delay-1">
+            <div class="pillar-num">01</div>
+            <h3 class="pillar-title">Apostolic Foundation</h3>
+            <p class="pillar-text">
+              Rooted in AD 52, when St. Thomas arrived on the shores of Malankara (Kerala), establishing the faith that continues uninterrupted across millennia.
+            </p>
+          </div>
+
+          <div class="pillar-card reveal-on-scroll delay-2">
+            <div class="pillar-num">02</div>
+            <h3 class="pillar-title">West Syriac Liturgy</h3>
+            <p class="pillar-text">
+              Our liturgy connects deeply with Antiochian and Jerusalem traditions, chanting the venerable anaphoras of St. James, Mar Dionysius, and other holy Fathers.
+            </p>
+          </div>
+
+          <div class="pillar-card reveal-on-scroll delay-3">
+            <div class="pillar-num">03</div>
+            <h3 class="pillar-title">Holy Madbaha (Sanctuary)</h3>
+            <p class="pillar-text">
+              The altar represents the Holy of Holies and Heaven itself, where the unbloody sacrifice of Christ’s body and blood is offered with reverence and incense.
+            </p>
+          </div>
+
+          <div class="pillar-card reveal-on-scroll delay-4">
+            <div class="pillar-num">04</div>
+            <h3 class="pillar-title">St. George (Geevarghese Sahada)</h3>
+            <p class="pillar-text">
+              Our beloved patron, whose unyielding faith and martyrdom inspire courage in our spiritual trials, venerated throughout Malankara Orthodox history.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Parish History & Consecration Details -->
+        <div class="history-card reveal-on-scroll">
+          <div class="history-grid">
+            <div class="history-left">
+              <span class="history-badge">Parish Profile</span>
+              <h3 class="history-title">St. George Salem Orthodox Church, Iyppalloor</h3>
+              <p class="history-intro">
+                Standing as a beacon of prayer in Iyppalloor, Kerala, this parish was raised by the devotion, sacrifices, and unity of our forefathers in faith.
+              </p>
+              
+              <div class="history-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Patron Saint:</span>
+                  <span class="spec-val">St. George the Martyr (Geevarghese Sahada)</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Jurisdiction:</span>
+                  <span class="spec-val">Catholicate of the East, Malankara Orthodox Syrian Church</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Diocese:</span>
+                  <span class="spec-val"><span class="placeholder-text">[Diocese Name Placeholder, e.g. Kollam / Thiruvananthapuram / Mavelikara / Niranam]</span></span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Foundation / Consecration:</span>
+                  <span class="spec-val"><span class="placeholder-text">[Parish Established Year Placeholder]</span></span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Supreme Primate:</span>
+                  <span class="spec-val">Catholicos of the East &amp; Malankara Metropolitan</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="history-right">
+              <div class="history-quote-box">
+                <h4>Parish Chronicle &amp; History Notes</h4>
+                <div class="placeholder-alert-badge">
+                  <span>ℹ Awaiting Exact Parish History Text</span>
+                </div>
+                <p>
+                  “[Insert here the cherished story of how the believers of Iyppalloor gathered, laid the foundation stone, built the church bell tower, and consecrated this holy sanctuary. You can add the names of founding elders, vicar pioneers, and milestones achieved.]”
+                </p>
+                <div class="easy-edit-hint">
+                  <strong>💡 Tip for you:</strong> Replace the text in this block anytime in <code>index.html</code> under the <code>&lt;!-- Parish Chronicle --&gt;</code> section.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 5: PARISH LIFE & SPIRITUAL WINGS
+         ========================================================= -->
+    <section class="parish-life-section section-padding bg-navy-alt" id="parish-life">
+      <div class="container">
+        
+        <div class="section-heading text-center reveal-on-scroll">
+          <div class="section-kicker">Spiritual Fellowship</div>
+          <h2 class="section-title">Parish Life &amp; Organizations</h2>
+          <div class="gold-flourish-divider center">
+            <span class="flourish-line"></span>
+            <span class="flourish-cross">✟</span>
+            <span class="flourish-line"></span>
+          </div>
+          <p class="section-subtitle">
+            Every generation is nurtured through prayer, charitable service, theological teaching, and sacred liturgical music.
+          </p>
+        </div>
+
+        <div class="org-grid">
+
+          <!-- Org 1: OSSAE Sunday School -->
+          <div class="org-card reveal-on-scroll delay-1">
+            <div class="org-icon-badge">📖</div>
+            <div class="org-header">
+              <h3 class="org-title">Sunday School (OSSAE)</h3>
+              <span class="org-subtitle">Orthodox Syrian Sunday School Association</span>
+            </div>
+            <p class="org-desc">
+              Teaching children from infant classes through 12th standard the Holy Scriptures, Orthodox liturgics, church history, and moral living.
+            </p>
+            <div class="org-meta">
+              <span><strong>Meets:</strong> Sundays after Holy Qurbana</span>
+              <span><strong>Headmaster:</strong> <span class="placeholder-text">[Name Placeholder]</span></span>
+            </div>
+          </div>
+
+          <!-- Org 2: MGOCYM -->
+          <div class="org-card reveal-on-scroll delay-2">
+            <div class="org-icon-badge">🕊</div>
+            <div class="org-header">
+              <h3 class="org-title">MGOCYM</h3>
+              <span class="org-subtitle">Mar Gregorios Orthodox Christian Youth Movement</span>
+            </div>
+            <p class="org-desc">
+              Empowering youth through worship, study, and service (Worship, Study, Service - the three motto pillars of Parumala Thirumeni’s movement).
+            </p>
+            <div class="org-meta">
+              <span><strong>Motto:</strong> Worship, Study, Service</span>
+              <span><strong>Secretary:</strong> <span class="placeholder-text">[Name Placeholder]</span></span>
+            </div>
+          </div>
+
+          <!-- Org 3: Martha Mariam Samajam -->
+          <div class="org-card reveal-on-scroll delay-3">
+            <div class="org-icon-badge">🌹</div>
+            <div class="org-header">
+              <h3 class="org-title">Martha Mariam Samajam</h3>
+              <span class="org-subtitle">Orthodox Christian Women’s Fellowship</span>
+            </div>
+            <p class="org-desc">
+              Named after the Blessed Mother of God (Martha Mariam), fostering deep family prayer, intercessory fasting, and charity outreach for the needy.
+            </p>
+            <div class="org-meta">
+              <span><strong>Focus:</strong> Fasting prayer &amp; Benevolence</span>
+              <span><strong>Secretary:</strong> <span class="placeholder-text">[Name Placeholder]</span></span>
+            </div>
+          </div>
+
+          <!-- Org 4: Parish Choir -->
+          <div class="org-card reveal-on-scroll delay-1">
+            <div class="org-icon-badge">🎵</div>
+            <div class="org-header">
+              <h3 class="org-title">Liturgical Parish Choir</h3>
+              <span class="org-subtitle">Sacred West Syriac Hymnody</span>
+            </div>
+            <p class="org-desc">
+              Leading the congregation in the eight liturgical tones (Ekbo, Eniyono, Qolo, B’outho) of the Orthodox Church with solemnity and devotion.
+            </p>
+            <div class="org-meta">
+              <span><strong>Practice:</strong> Saturdays &amp; Sundays</span>
+              <span><strong>Choir Master:</strong> <span class="placeholder-text">[Name Placeholder]</span></span>
+            </div>
+          </div>
+
+          <!-- Org 5: Acolytes & Altar Servers -->
+          <div class="org-card reveal-on-scroll delay-2">
+            <div class="org-icon-badge">🕯</div>
+            <div class="org-header">
+              <h3 class="org-title">Madbaha Sevakar (Acolytes)</h3>
+              <span class="org-subtitle">Altar Assistants &amp; Deacons</span>
+            </div>
+            <p class="org-desc">
+              Dedicated young men trained in sacred altar service, carrying candles, censers, and fans (Marvahtho) before the Holy Mysteries.
+            </p>
+            <div class="org-meta">
+              <span><strong>Service:</strong> Holy Sanctuary Assistance</span>
+              <span><strong>Guide:</strong> Parish Vicar</span>
+            </div>
+          </div>
+
+          <!-- Org 6: Balasamajam & Prayer Groups -->
+          <div class="org-card reveal-on-scroll delay-3">
+            <div class="org-icon-badge">🏡</div>
+            <div class="org-header">
+              <h3 class="org-title">Ward Prayer Fellowships</h3>
+              <span class="org-subtitle">Kudumba Prarthana Units</span>
+            </div>
+            <p class="org-desc">
+              Neighborhood family prayer meetings across Iyppalloor, gathering in parishioners’ homes for scripture reading, intercession, and fellowship.
+            </p>
+            <div class="org-meta">
+              <span><strong>Frequency:</strong> Weekly / Monthly Wards</span>
+              <span><strong>Units:</strong> <span class="placeholder-text">[List of Wards Placeholder]</span></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 6: SACRED PHOTO GALLERY & VISUAL EMBLEMS
+         ========================================================= -->
+    <section class="gallery-section section-padding" id="gallery">
+      <div class="container">
+        
+        <div class="section-heading text-center reveal-on-scroll">
+          <div class="section-kicker">Sacred Splendor</div>
+          <h2 class="section-title">Gallery &amp; Liturgical Life</h2>
+          <div class="gold-flourish-divider center">
+            <span class="flourish-line"></span>
+            <span class="flourish-cross">✟</span>
+            <span class="flourish-line"></span>
+          </div>
+          <p class="section-subtitle">
+            An artistic presentation of our liturgical traditions and sanctuary. Custom parish photographs can be placed directly into these slots anytime.
+          </p>
+        </div>
+
+        <!-- Gallery Filter Buttons -->
+        <div class="gallery-filters reveal-on-scroll" role="tablist" aria-label="Gallery filters">
+          <button class="filter-btn active" data-filter="all">All Expressions</button>
+          <button class="filter-btn" data-filter="sanctuary">Sanctuary &amp; Altar</button>
+          <button class="filter-btn" data-filter="perunnal">Feasts &amp; Processions</button>
+          <button class="filter-btn" data-filter="fellowship">Fellowship &amp; Youth</button>
+          <button class="filter-btn" data-filter="heritage">Belfry &amp; Grounds</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="gallery-container">
+          
+          <!-- Item 1: Holy Madbaha -->
+          <div class="gallery-item" data-category="sanctuary">
+            <div class="gallery-card">
+              <img src="assets/images/gallery-sanctuary.svg" alt="The Holy Sanctuary and Altar" class="gallery-img" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-badge">Sanctuary</span>
+                <h4 class="gallery-caption-title">The Holy Madbaha &amp; Thronos</h4>
+                <p class="gallery-caption-desc">The sanctuary of the Orthodox Church where the Holy Eucharist is celebrated.</p>
+                <button class="btn-gallery-view" data-img="assets/images/gallery-sanctuary.svg" data-title="The Holy Madbaha &amp; Thronos" data-desc="Sacred West Syriac altar illuminated with candles and golden cross.">
+                  Enlarge View ⤢
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: St. George Feast Procession -->
+          <div class="gallery-item" data-category="perunnal">
+            <div class="gallery-card">
+              <img src="assets/images/gallery-perunnal.svg" alt="Patronal Feast and Procession" class="gallery-img" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-badge">Feasts</span>
+                <h4 class="gallery-caption-title">Perunnal Rasa Procession</h4>
+                <p class="gallery-caption-desc">Traditional liturgical procession with ceremonial umbrellas and sacred banners.</p>
+                <button class="btn-gallery-view" data-img="assets/images/gallery-perunnal.svg" data-title="Perunnal Rasa Procession" data-desc="Feast of St. Geevarghese Sahada celebrated with grand devotion.">
+                  Enlarge View ⤢
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Sunday School & MGOCYM -->
+          <div class="gallery-item" data-category="fellowship">
+            <div class="gallery-card">
+              <img src="assets/images/gallery-youth.svg" alt="Sunday School and Youth Movement" class="gallery-img" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-badge">Fellowship</span>
+                <h4 class="gallery-caption-title">OSSAE &amp; MGOCYM Youth</h4>
+                <p class="gallery-caption-desc">Passing on the light of faith and scriptural wisdom to the young generation.</p>
+                <button class="btn-gallery-view" data-img="assets/images/gallery-youth.svg" data-title="OSSAE &amp; MGOCYM Youth" data-desc="Nurturing the future pillars of the Orthodox church.">
+                  Enlarge View ⤢
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Martha Mariam Samajam -->
+          <div class="gallery-item" data-category="fellowship">
+            <div class="gallery-card">
+              <img src="assets/images/gallery-charity.svg" alt="Women's Fellowship & Charity" class="gallery-img" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-badge">Fellowship</span>
+                <h4 class="gallery-caption-title">Martha Mariam Samajam</h4>
+                <p class="gallery-caption-desc">Fasting prayer, compassionate service, and charitable deeds in Iyppalloor.</p>
+                <button class="btn-gallery-view" data-img="assets/images/gallery-charity.svg" data-title="Martha Mariam Samajam" data-desc="Living witness of Christian compassion and steadfast prayer.">
+                  Enlarge View ⤢
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Belfry & Church Grounds -->
+          <div class="gallery-item" data-category="heritage">
+            <div class="gallery-card">
+              <img src="assets/images/gallery-belltower.svg" alt="Belfry and Architecture" class="gallery-img" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-badge">Architecture</span>
+                <h4 class="gallery-caption-title">Parish Belfry &amp; Grounds</h4>
+                <p class="gallery-caption-desc">The bell calling the faithful to morning and evening prayer across Iyppalloor.</p>
+                <button class="btn-gallery-view" data-img="assets/images/gallery-belltower.svg" data-title="Parish Belfry &amp; Grounds" data-desc="Traditional Malankara Orthodox architectural beauty.">
+                  Enlarge View ⤢
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6: Sacred Choir -->
+          <div class="gallery-item" data-category="sanctuary">
+            <div class="gallery-card">
+              <img src="assets/images/gallery-choir.svg" alt="Parish Liturgical Choir" class="gallery-img" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-badge">Liturgy</span>
+                <h4 class="gallery-caption-title">Sacred Liturgical Choir</h4>
+                <p class="gallery-caption-desc">Chanting West Syriac hymns that echo centuries of continuous Orthodox prayer.</p>
+                <button class="btn-gallery-view" data-img="assets/images/gallery-choir.svg" data-title="Sacred Liturgical Choir" data-desc="Echoes of praise: Moriyo Rahem Melain.">
+                  Enlarge View ⤢
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Note about Adding Real Photos -->
+        <div class="gallery-uploader-guide reveal-on-scroll">
+          <div class="guide-header">
+            <span class="guide-icon">📷</span>
+            <strong>How to add actual photos of your Iyppalloor Church:</strong>
+          </div>
+          <p class="guide-text">
+            To display real photographs of your church building, altar, perunnal procession, or parish family, simply save your JPEG or PNG photos into the <code>assets/images/</code> folder and update the file paths in <code>index.html</code> (e.g., change <code>assets/images/gallery-sanctuary.svg</code> to <code>assets/images/my-church-photo.jpg</code>).
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Modal Lightbox for Gallery Inspection -->
+    <div class="modal-lightbox" id="gallery-modal" aria-hidden="true" role="dialog" aria-label="Photo Lightbox">
+      <div class="modal-backdrop" id="modal-backdrop"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="modal-close" aria-label="Close Lightbox">✕</button>
+        <div class="modal-image-box">
+          <img id="modal-img" src="" alt="Enlarged view">
+        </div>
+        <div class="modal-caption-box">
+          <h3 id="modal-title">Photo Title</h3>
+          <p id="modal-desc">Photo Description</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- =========================================================
+         SECTION 7: FEASTS & LITURGICAL CALENDAR (PERUNNAL)
+         ========================================================= -->
+    <section class="feasts-section section-padding bg-navy-alt" id="feasts">
+      <div class="container">
+        
+        <div class="section-heading text-center reveal-on-scroll">
+          <div class="section-kicker">Sacred Feasts &amp; Seasons</div>
+          <h2 class="section-title">Parish Feasts &amp; Liturgical Calendar</h2>
+          <div class="gold-flourish-divider center">
+            <span class="flourish-line"></span>
+            <span class="flourish-cross">✟</span>
+            <span class="flourish-line"></span>
+          </div>
+          <p class="section-subtitle">
+            Mark your calendar for our primary patronal feast and venerated milestones of the Malankara Orthodox liturgical year.
+          </p>
+        </div>
+
+        <div class="feasts-timeline">
+
+          <!-- Feast 1: Patronal Feast of St. George -->
+          <div class="feast-card feast-card-primary reveal-on-scroll delay-1">
+            <div class="feast-date-col">
+              <span class="feast-month">MAY</span>
+              <span class="feast-day">06</span>
+              <span class="feast-badge">Main Perunnal</span>
+            </div>
+            <div class="feast-details">
+              <div class="feast-tag-pill">Patronal Feast</div>
+              <h3 class="feast-name">Feast of St. George (Geevarghese Sahada Perunnal)</h3>
+              <p class="feast-desc">
+                The grand annual patronal festival of our parish. Celebrated with Holy Tri-Mass (Moonninmel Qurbana), solemn Rasa procession through the streets of Iyppalloor, Nercha offerings, and fireworks.
+              </p>
+              <div class="feast-meta-row">
+                <span>📍 Parish Grounds, Iyppalloor</span>
+                <span>📅 <span class="placeholder-text">[Parish Perunnal Dates / Flag Hoisting Kodiyeettu Placeholder]</span></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feast 2: Passion Week & Easter -->
+          <div class="feast-card reveal-on-scroll delay-2">
+            <div class="feast-date-col">
+              <span class="feast-month">APR / MAR</span>
+              <span class="feast-day">MOVE</span>
+              <span class="feast-badge">Holy Week</span>
+            </div>
+            <div class="feast-details">
+              <div class="feast-tag-pill">Great Lent Season</div>
+              <h3 class="feast-name">Passion Week (Hasha Aazhcha) &amp; Holy Easter (Qyamtha)</h3>
+              <p class="feast-desc">
+                Fifty days of Great Lent culminating in Palm Sunday (Hosanna), Pesaha (Maundy Thursday), Good Friday (Dukha Velliyaazhcha), and the glorious Resurrection of our Lord (Kymtha Perunnal).
+              </p>
+              <div class="feast-meta-row">
+                <span>🕊 Great Lent &amp; Holy Pascha</span>
+                <span>📅 Subject to Liturgical Paschal Moon</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feast 3: Dukhrana of St. Thomas -->
+          <div class="feast-card reveal-on-scroll delay-3">
+            <div class="feast-date-col">
+              <span class="feast-month">JULY</span>
+              <span class="feast-day">03</span>
+              <span class="feast-badge">Apostle Feast</span>
+            </div>
+            <div class="feast-details">
+              <div class="feast-tag-pill">Father of Malankara</div>
+              <h3 class="feast-name">Dukhrana of St. Thomas the Apostle</h3>
+              <p class="feast-desc">
+                Commemoration of the martyrdom and heavenly entry of the Apostle of India, who brought the saving light of Christ to the shores of Kerala in AD 52.
+              </p>
+              <div class="feast-meta-row">
+                <span>♰ Foundation of Indian Orthodoxy</span>
+                <span>📅 July 3rd Annually</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feast 4: Parumala Thirumeni Feast -->
+          <div class="feast-card reveal-on-scroll delay-4">
+            <div class="feast-date-col">
+              <span class="feast-month">NOV</span>
+              <span class="feast-day">02</span>
+              <span class="feast-badge">Parumala Feast</span>
+            </div>
+            <div class="feast-details">
+              <div class="feast-tag-pill">Saint of Malankara</div>
+              <h3 class="feast-name">Feast of St. Gregorios of Parumala (Parumala Thirumeni)</h3>
+              <p class="feast-desc">
+                Veneration of the first canonized saint of the Malankara Orthodox Syrian Church, renowned for humility, intense fasting prayer, and miracles.
+              </p>
+              <div class="feast-meta-row">
+                <span>🌹 Intercessor of Faith</span>
+                <span>📅 November 2nd Annually</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 8: PARISH LEADERSHIP & GOVERNANCE
+         ========================================================= -->
+    <section class="leadership-section section-padding" id="leadership">
+      <div class="container">
+        
+        <div class="section-heading text-center reveal-on-scroll">
+          <div class="section-kicker">Parish Stewardship</div>
+          <h2 class="section-title">Leadership &amp; Managing Committee</h2>
+          <div class="gold-flourish-divider center">
+            <span class="flourish-line"></span>
+            <span class="flourish-cross">✟</span>
+            <span class="flourish-line"></span>
+          </div>
+          <p class="section-subtitle">
+            Administered in accordance with the 1934 Constitution of the Malankara Orthodox Syrian Church.
+          </p>
+        </div>
+
+        <div class="leadership-grid">
+          
+          <!-- Vicar Card -->
+          <div class="leader-card reveal-on-scroll delay-1">
+            <div class="leader-avatar">
+              <span class="avatar-cross">♰</span>
+            </div>
+            <div class="leader-role">President &amp; Vicar</div>
+            <h3 class="leader-name"><span class="placeholder-text">[Rev. Fr. Vicar Name Placeholder]</span></h3>
+            <p class="leader-desc">Spiritual father and shepherd of the parish, presiding over all liturgical and parish committee affairs.</p>
+            <div class="leader-contact">
+              <span>📞 <span class="placeholder-text">[Vicar Contact Placeholder]</span></span>
+            </div>
+          </div>
+
+          <!-- Lay Trustee Card -->
+          <div class="leader-card reveal-on-scroll delay-2">
+            <div class="leader-avatar">
+              <span class="avatar-cross">⚖</span>
+            </div>
+            <div class="leader-role">Trustee (Kaikaaran)</div>
+            <h3 class="leader-name"><span class="placeholder-text">[Trustee Name Placeholder]</span></h3>
+            <p class="leader-desc">Steward of parish temporal assets, accounts, offerings, and development projects.</p>
+            <div class="leader-contact">
+              <span>📞 <span class="placeholder-text">[Trustee Contact Placeholder]</span></span>
+            </div>
+          </div>
+
+          <!-- Secretary Card -->
+          <div class="leader-card reveal-on-scroll delay-3">
+            <div class="leader-avatar">
+              <span class="avatar-cross">📜</span>
+            </div>
+            <div class="leader-role">Secretary</div>
+            <h3 class="leader-name"><span class="placeholder-text">[Secretary Name Placeholder]</span></h3>
+            <p class="leader-desc">Custodian of parish records, minutes of general body meetings, and parish correspondence.</p>
+            <div class="leader-contact">
+              <span>📞 <span class="placeholder-text">[Secretary Contact Placeholder]</span></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 9: CONTACT, LOCATION & PRAYER REQUEST
+         ========================================================= -->
+    <section class="contact-section section-padding bg-navy-alt" id="contact">
+      <div class="container">
+        
+        <div class="section-heading text-center reveal-on-scroll">
+          <div class="section-kicker">Find &amp; Connect</div>
+          <h2 class="section-title">Visit Us &amp; Pastoral Inquiries</h2>
+          <div class="gold-flourish-divider center">
+            <span class="flourish-line"></span>
+            <span class="flourish-cross">✟</span>
+            <span class="flourish-line"></span>
+          </div>
+          <p class="section-subtitle">
+            Whether you are visiting Kerala, seeking pastoral prayers, or joining us for Sunday Holy Qurbana, our doors are open in Christian love.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Left Column: Contact Cards & Location -->
+          <div class="contact-info-col reveal-on-scroll delay-1">
+            
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <div class="info-text">
+                <h4>Church Location &amp; Address</h4>
+                <p>
+                  <strong>St. George Salem Orthodox Church</strong><br>
+                  Iyppalloor, Kerala, India<br>
+                  <span class="placeholder-text">[Post Office, Taluk, District &amp; PIN Code Placeholder]</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">📞</div>
+              <div class="info-text">
+                <h4>Parish Office &amp; Vicarage</h4>
+                <p>
+                  Phone: <span class="placeholder-text">[+91 XXXXX XXXXX]</span><br>
+                  Vicarage: <span class="placeholder-text">[+91 XXXXX XXXXX]</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">✉</div>
+              <div class="info-text">
+                <h4>Electronic Mail</h4>
+                <p>
+                  Email: <span class="placeholder-text">[stgeorgesalemiyppalloor@example.com]</span><br>
+                  Website: <code>www.stgeorgesalemchurch.org</code> (Custom Domain Ready)
+                </p>
+              </div>
+            </div>
+
+            <!-- Tithes & Nercha Offerings Information -->
+            <div class="offering-card">
+              <div class="offering-header">
+                <span class="offering-icon">🪙</span>
+                <h4>Parish Offerings &amp; Nercha Support</h4>
+              </div>
+              <p>
+                Contributions for Holy Qurbana intentions, feast Nercha, building funds, and charity ministries can be coordinated with the parish trustee.
+              </p>
+              <div class="bank-placeholder-box">
+                <div><strong>Account Name:</strong> <span class="placeholder-text">[St. George Salem Orthodox Church, Iyppalloor]</span></div>
+                <div><strong>Bank &amp; Branch:</strong> <span class="placeholder-text">[Bank Name, Iyppalloor Branch]</span></div>
+                <div><strong>IFSC Code:</strong> <span class="placeholder-text">[XXXX0000000]</span></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Prayer Request / Message Form -->
+          <div class="contact-form-col reveal-on-scroll delay-2">
+            <div class="prayer-form-card">
+              <div class="form-title-wrap">
+                <h3 class="form-title">Send a Prayer Request or Message</h3>
+                <p class="form-desc">
+                  Submit a prayer request for the sick, memorials for departed souls, or pastoral inquiries.
+                </p>
+              </div>
+
+              <form id="prayer-form" class="prayer-form" novalidate>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="sender-name">Your Full Name <span class="req">*</span></label>
+                    <input type="text" id="sender-name" name="name" placeholder="e.g. Thomas Varghese" required>
+                    <span class="error-msg" id="name-error">Please enter your name</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="sender-phone">Contact Phone / WhatsApp</label>
+                    <input type="tel" id="sender-phone" name="phone" placeholder="+91 98765 43210">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-email">Email Address <span class="req">*</span></label>
+                  <input type="email" id="sender-email" name="email" placeholder="you@example.com" required>
+                  <span class="error-msg" id="email-error">Please enter a valid email</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="request-type">Nature of Request <span class="req">*</span></label>
+                  <select id="request-type" name="type" required>
+                    <option value="prayer">Prayer Request for Health / Family</option>
+                    <option value="qurbana">Holy Qurbana Remembrance / Memorial</option>
+                    <option value="thanksgiving">Thanksgiving (Sthothram)</option>
+                    <option value="visit">Visiting the Parish / First Time Visitor</option>
+                    <option value="general">General Inquiry to Vicar &amp; Trustee</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="prayer-message">Prayer Details / Message <span class="req">*</span></label>
+                  <textarea id="prayer-message" name="message" rows="4" placeholder="Write your intention or message here..." required></textarea>
+                  <span class="error-msg" id="message-error">Please share your prayer intention</span>
+                </div>
+
+                <button type="submit" class="btn btn-gold btn-block btn-submit">
+                  <span>Submit Prayer Request ♰</span>
+                </button>
+
+                <div id="form-success-banner" class="form-alert-success" style="display: none;" role="status">
+                  <strong>Praise the Lord!</strong> Your prayer request has been recorded. May the Lord grant you peace and blessing through the intercession of St. George.
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER (Reverent, Complete, Informative)
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="footer-top-accent"></div>
+    <div class="container footer-container">
+      
+      <!-- Footer Col 1: Identity -->
+      <div class="footer-col footer-col-main">
+        <div class="footer-brand">
+          <img src="assets/images/church-crest.svg" alt="Church Emblem" width="60" height="60" loading="lazy">
+          <div>
+            <h3 class="footer-title">ST. GEORGE SALEM</h3>
+            <p class="footer-subtitle">Orthodox Church, Iyppalloor, Kerala</p>
+          </div>
+        </div>
+        <p class="footer-lineage-text">
+          Belonging to the Malankara Orthodox Syrian Church (The Indian Orthodox Church), an autocephalous Oriental Orthodox Church established by St. Thomas the Apostle in AD 52.
+        </p>
+        <p class="syriac-footer-blessing">
+          “Moran Yeshumeeha, Anugrahikkaname”<br>
+          <span class="syriac-sub">Lord Jesus Christ, have mercy upon us.</span>
+        </p>
+      </div>
+
+      <!-- Footer Col 2: Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Our Parish</a></li>
+          <li><a href="#services">Holy Qurbana Timings</a></li>
+          <li><a href="#parish-life">Spiritual Organizations</a></li>
+          <li><a href="#gallery">Sacred Photo Gallery</a></li>
+          <li><a href="#feasts">Feasts &amp; Calendar</a></li>
+          <li><a href="#contact">Contact &amp; Location</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 3: Spiritual Wings -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Spiritual Fellowships</h4>
+        <ul class="footer-links">
+          <li><a href="#parish-life">OSSAE Sunday School</a></li>
+          <li><a href="#parish-life">MGOCYM Youth Wing</a></li>
+          <li><a href="#parish-life">Martha Mariam Samajam</a></li>
+          <li><a href="#parish-life">Liturgical Parish Choir</a></li>
+          <li><a href="#parish-life">Madbaha Sevakar (Acolytes)</a></li>
+          <li><a href="#parish-life">Kudumba Prarthana Units</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 4: Divine Blessing & Scripture -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Prayer &amp; Blessing</h4>
+        <div class="footer-scripture-box">
+          <div class="quote-symbol">“</div>
+          <p>
+            The righteous shall flourish like a palm tree; he shall grow like a cedar in Lebanon. Those who are planted in the house of the Lord shall flourish in the courts of our God.
+          </p>
+          <cite>— Psalm 92:12-13</cite>
+        </div>
+        <div class="footer-sleeba-row">
+          <img src="assets/images/sleeba-cross.svg" alt="Cross" width="30" height="39" loading="lazy">
+          <span>St. Geevarghese Sahada, Pray for us.</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright & Devotional Dedication -->
+    <div class="footer-bottom">
+      <div class="container bottom-flex">
+        <div class="bottom-left">
+          © <span id="current-year">2026</span> St. George Salem Orthodox Church, Iyppalloor, Kerala. All rights reserved.
+        </div>
+        <div class="bottom-right">
+          Crafted with love &amp; devotion as a humble gift to the holy church.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating "Back to Top" Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top of page" title="Return to top">
+    ↑
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
